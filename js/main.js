@@ -16,7 +16,36 @@ let automobili= [
     {marca: "Maserati", modello: "Levante", alimentazione: "diesel"},
     {marca: "Tesla", modello: "Model S", alimentazione: "elettrica"},
     {marca: "Ferrari", modello: "Portofino", alimentazione: "diesel"},
-    {marca: "Porsche", modello: "Panamera", alimentazione: "benzina"},
-
-  
+    {marca: "Porsche", modello: "Panamera", alimentazione: "benzina"}
 ];
+
+
+let listaAutoBenzina = [];
+let listaAutoDiesel = [];
+let listaAltreAuto = [];
+
+automobili.forEach(function(automobile) {
+    if(automobile.alimentazione == "benzina") {
+        listaAutoBenzina.push(automobile);
+    } else if (automobile.alimentazione == "diesel") {
+        listaAutoDiesel.push(automobile);
+    } else {
+        listaAltreAuto.push(automobile);
+    }
+
+});
+
+console.log(automobili);
+
+for(let i = 0; i < listaAutoBenzina.length; i++){
+    console.log("marca:", listaAutoBenzina[i].marca);
+    console.log("modello:", listaAutoBenzina[i].modello);
+    console.log("alimentazione:", listaAutoBenzina[i].alimentazione);
+    console.log("");
+
+}
+
+
+
+
+
