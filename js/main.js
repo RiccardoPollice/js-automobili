@@ -45,6 +45,24 @@ for(let i = 0; i < listaAutoBenzina.length; i++){
 
 }
 
+for(let i = 0; i < listaAutoDiesel.length; i++){
+    console.log("marca:", listaAutoDiesel[i].marca);
+    console.log("modello:", listaAutoDiesel[i].modello);
+    console.log("alimentazione:", listaAutoDiesel[i].alimentazione);
+    console.log("");
+
+}
+
+for(let i = 0; i < listaAltreAuto.length; i++){
+    console.log("marca:", listaAltreAuto[i].marca);
+    console.log("modello:", listaAltreAuto[i].modello);
+    console.log("alimentazione:", listaAltreAuto[i].alimentazione);
+    console.log("");
+
+}
+
+
+
 
 
 
