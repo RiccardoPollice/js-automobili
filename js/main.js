@@ -1,10 +1,5 @@
 // Crea un array composto da 10 automobili. 
 // Ogni oggetto automobile avrà le seguenti proprietà: marca, modello e alimentazione (benzina, diesel, elettrica, ibrida, gpl).
-// Dividi le automobili in 3 array separati:
-// nel primo array solo le auto a benzina,
-// nel secondo solo le auto a diesel,
-// nel terzo il resto delle auto.
-// Infine stampa separatamente i 3 array.
 
 let automobili= [
     {marca: "Ferrari", modello: "Roma", alimentazione: "benzina"},
@@ -19,10 +14,15 @@ let automobili= [
     {marca: "Porsche", modello: "Panamera", alimentazione: "benzina"}
 ];
 
+// Dividi le automobili in 3 array separati:
 
 let listaAutoBenzina = [];
 let listaAutoDiesel = [];
 let listaAltreAuto = [];
+
+// nel primo array solo le auto a benzina,
+// nel secondo solo le auto a diesel,
+// nel terzo il resto delle auto.
 
 automobili.forEach(function(automobile) {
     if(automobile.alimentazione == "benzina") {
@@ -36,6 +36,8 @@ automobili.forEach(function(automobile) {
 });
 
 console.log(automobili);
+
+// Infine stampa separatamente i 3 array.
 
 for(let i = 0; i < listaAutoBenzina.length; i++){
     console.log("marca:", listaAutoBenzina[i].marca);
